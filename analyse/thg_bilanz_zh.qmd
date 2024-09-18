@@ -1,0 +1,113 @@
+---
+title: "THG-Bilanzierug Kanton ZH"
+subtitle: "Aufbereitung als OGD-Datensatz"
+author: "Gian-Marco Alt"
+date: "2024-08-19"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+## Ausgangslage
+
+Für den Kanton Zürich werden die Treibhausgasemissionen, die innerhalb des Kantons entstehen, bilanziert. Diese Bilanzierung wurde bisher ungefähr alle vier Jahre nach eigener Methodik erstellt.<br>Künftig wird die Bilanzierung jährlich aktualisiert. Sie orientiert sich dafür mehrheitlich am Tool «EcoSpeed Region».
+
+### Aufbereitung und Nachführung als OGD-Datensatz
+
+Die Bilanz liegt initial als Excel-Asuwertung vor. Um die Daten in maschinenlesbarer Form der Öffentlichkeit verfügbar zu machen, wird das Excel-File als OGD-Datensatz aufbereitet und über das Portal der [offenen Behördendaten](https://www.zh.ch/de/politik-staat/opendata.html) zur Verfügung gestellt, dokumentiert und nachgeführt.
+
+```{r}
+#| label: load-packages
+#| include: false
+
+library(tidyverse) # a suite of packages for data wrangling, transformation, plotting, ...
+library(stringr)
+library(readxl)
+library(here)
+
+```
+
+## Aufbereitung
+
+### Einlesen Excelfile - feine Auflösung
+
+```{r}
+#| label: get-xlsx
+#| echo: true
+#| include: true
+
+## Excelfile wird eingelesen und angepasst
+## verwendete Datengrundlagen sind in Spalte "Quelle" beschrieben
+ 
+thg_xls <- read_excel(
+  here("data/roh/20240809_Bilanz_ZH_Submission2023.xlsx")
+  )
+
+thg_long <- thg_xls %>% 
+  pivot_longer(
+    cols = where(is.numeric) & !matches("InBilanz"),
+    names_to = "jahr",
+    values_to = "value")
+
+```
+
+```{r}
+#| label: adapt-cols
+#| echo: true
+#| include: true
+
+## Spalten werden weggelassen, umgeschrieben etc.
+## Records mit "InBilanz" == 0 werden rausgefiltert
+
+# Kategorien LNF/SNF sowie SN_LNF/SZ_SNF werden zu LKW bzw SZ zusammengefasst
+thg_mod <- thg_long %>%
+  filter(InBilanz == 1 & jahr != 2023) %>% 
+  select(jahr, hauptgruppe = Hauptgruppe, untergruppe = Untergruppe, nfr = NFR, thg = Treibhausgase, 
+         thg_agg = `Einheit in [t/a]`, emission = value, quelle = Quelle) %>% 
+  mutate(einheit = "t/a", einheit_lang = "Tonnen pro Jahr")
+
+# # QS: Emissionen CO2eq pro Haupt- und Untergruppen und Jahr
+# thg_zh <- thg_mod %>% 
+#   # group_by(jahr, hauptgruppe, untergruppe, thg_agg) %>%
+#   group_by(jahr, thg_agg) %>% 
+#   summarise(emi = sum(emission))
+  
+# Export OGD-Datensatz
+write_delim(thg_mod, here("data/final/thg_ogd_zh.csv"), delim = ",")
+
+```
+
+### Einlesen Excelfile - Absenkpfad
+
+```{r}
+#| label: get-xls-absenk
+#| echo: true
+#| include: true
+
+## Das Blatt Absenkpfad aus dem Excelfile wird eingelesen und angepasst
+ 
+thg_netto <- read_excel(
+  here("data/roh/20240809_Bilanz_ZH_Submission2023.xlsx"),
+  sheet = "Absenkpfad",
+  range = "B5:BA11",
+  )
+
+## Umrechnung CO2eq in t/a, NA mit 0 ersetzen
+tgh_mod_2040 <- thg_netto %>%
+  replace(is.na(.), 0) %>%
+  rename(hauptgruppe = Hauptgruppen) %>% 
+  mutate(across(where(is.numeric), ~ as.integer(. * 1000))) %>% 
+  pivot_longer(
+    cols = where(is.numeric),
+    names_to = "jahr",
+    values_to = "value") %>% 
+  mutate(thg_agg = "CO2eq", einheit = "t/a", einheit_lang = "Tonnen pro Jahr")
+
+tgh_2040 <- tgh_mod_2040 %>%
+  filter(jahr > 2022)
+
+# Export Datensatz in OGD-Format
+write_delim(tgh_2040, here("data/final/thg_absenkpfad_zh.csv"), delim = ",")
+  
+```
