@@ -1,4 +1,100 @@
 hauptgruppe,jahr,value,thg_agg,einheit,einheit_lang,stand
+Gebäude,2025,1530980,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2026,1425919,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2027,1320858,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2028,1215797,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2029,1110736,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2030,1005675,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2031,919474,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2032,833273,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2033,747072,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2034,660872,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2035,574671,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2036,488470,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2037,402270,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2038,316069,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2039,229868,CO2eq,t/a,Tonnen pro Jahr,2026
+Gebäude,2040,143667,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2025,1971217,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2026,1861916,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2027,1752614,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2028,1643313,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2029,1534011,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2030,1424710,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2031,1294111,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2032,1163513,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2033,1032914,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2034,902316,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2035,771718,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2036,641119,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2037,510521,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2038,379922,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2039,249324,CO2eq,t/a,Tonnen pro Jahr,2026
+Verkehr,2040,118725,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2025,606721,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2026,611354,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2027,615988,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2028,620622,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2029,625255,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2030,629889,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2031,586584,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2032,543279,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2033,499974,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2034,456669,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2035,413364,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2036,370060,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2037,326755,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2038,283450,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2039,240145,CO2eq,t/a,Tonnen pro Jahr,2026
+Industrie,2040,196840,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2025,537006,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2026,511107,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2027,485208,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2028,459308,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2029,433409,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2030,407509,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2031,375491,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2032,343472,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2033,311454,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2034,279435,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2035,247416,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2036,215398,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2037,183379,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2038,151360,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2039,119342,CO2eq,t/a,Tonnen pro Jahr,2026
+Abwasser und Abfall,2040,87323,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2025,337210,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2026,329000,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2027,320790,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2028,312581,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2029,304371,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2030,296161,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2031,289815,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2032,283469,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2033,277122,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2034,270776,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2035,264430,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2036,258083,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2037,251737,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2038,245391,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2039,239044,CO2eq,t/a,Tonnen pro Jahr,2026
+Landwirtschaft,2040,232698,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2025,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2026,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2027,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2028,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2029,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2030,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2031,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2032,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2033,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2034,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2035,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2036,0,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2037,-100000,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2038,-300000,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2039,-500000,CO2eq,t/a,Tonnen pro Jahr,2026
+Negative Emissionen,2040,-779256,CO2eq,t/a,Tonnen pro Jahr,2026
 Gebäude,2024,1513864,CO2eq,t/a,Tonnen pro Jahr,2025
 Gebäude,2025,1429166,CO2eq,t/a,Tonnen pro Jahr,2025
 Gebäude,2026,1344467,CO2eq,t/a,Tonnen pro Jahr,2025
